@@ -1,0 +1,210 @@
+{
+    "id": "MER_RR_BINNED_sparse-bins",
+    "decodeQualification": "INTENDED",
+    "expectedContent": {
+        "sceneWidth": 4320,
+        "sceneHeight": 2160,
+        "startTime": "30-NOV-2005 23:06:00.430000",
+        "endTime": "04-DEC-2005 23:01:00.210000",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 1863.0,
+                    "y": 1161.0,
+                    "lat": -6.75,
+                    "lon": -24.75
+                },
+                {
+                    "x": 3207.0,
+                    "y": 1401.0,
+                    "lat": -26.75,
+                    "lon": 87.25
+                }
+            ],
+            "reverseAccuracy": 0.001
+        },
+        "bands": [
+            {
+                "name": "bl_bin_num",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 225,
+                        "y": 384,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2959,
+                        "y": 1837,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_nobs",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 1256,
+                        "y": 554,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2637,
+                        "y": 789,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_nscenes",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 2376,
+                        "y": 1609,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2628,
+                        "y": 2005,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_1_mean",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "1.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 683,
+                        "y": 1438,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2242,
+                        "y": 1973,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_1_sigma",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "1.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 3266,
+                        "y": 1046,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 4107,
+                        "y": 1049,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_2_mean",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "2.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 1470,
+                        "y": 1942,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 43,
+                        "y": 1016,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_2_sigma",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "2.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 1414,
+                        "y": 425,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 1180,
+                        "y": 93,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_3_mean",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "3.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 4196,
+                        "y": 1306,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2472,
+                        "y": 1548,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "bl_radiance_3_sigma",
+                "noDataValue": "NaN",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "3.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 1002,
+                        "y": 1074,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 1387,
+                        "y": 1560,
+                        "value": "NaN"
+                    }
+                ]
+            }
+        ],
+        "metadata": [
+            {
+                "path": "Global_Attributes/product_name",
+                "value": "MER_RR_BINNED_sparse"
+            },
+            {
+                "path": "Global_Attributes/processing_time",
+                "value": "2013-08-09T10:05:25.145"
+            }
+        ]
+    }
+}

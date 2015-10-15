@@ -1,0 +1,183 @@
+{
+    "id": "ASA_IMG_1PXPDE20020730_095910",
+    "decodeQualification": "INTENDED",
+    "expectedContent": {
+        "sceneWidth": 8112,
+        "sceneHeight": 9706,
+        "startTime": "30-JUL-2002 09:59:10.398060",
+        "endTime": "30-JUL-2002 09:59:26.682175",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 3498.0,
+                    "y": 5217.0,
+                    "lat": 52.327308523672144,
+                    "lon": 5.610365315373723
+                },
+                {
+                    "x": 6022.0,
+                    "y": 6298.0,
+                    "lat": 52.19485896734293,
+                    "lon": 6.0645430724871385
+                }
+            ],
+            "reverseAccuracy": 0.8
+        },
+        "tiePointGrids": [
+            {
+                "name": "samples",
+                "description": "range sample",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "812.0",
+                "subSamplingY": "809.0",
+                "expectedPixels": [
+                    {
+                        "x": 423,
+                        "y": 1729,
+                        "value": 424.0
+                    },
+                    {
+                        "x": 5557,
+                        "y": 8255,
+                        "value": 5558.0
+                    }
+                ]
+            },
+            {
+                "name": "slant_range_time",
+                "description": "2 way slant range time",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "812.0",
+                "subSamplingY": "809.0",
+                "expectedPixels": [
+                    {
+                        "x": 2359,
+                        "y": 2493,
+                        "value": 6004837.5
+                    },
+                    {
+                        "x": 4952,
+                        "y": 3545,
+                        "value": 5893723.5
+                    }
+                ]
+            },
+            {
+                "name": "incident_angle",
+                "description": "Incident angle",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "812.0",
+                "subSamplingY": "809.0",
+                "expectedPixels": [
+                    {
+                        "x": 4461,
+                        "y": 7234,
+                        "value": 27.86856
+                    },
+                    {
+                        "x": 4934,
+                        "y": 9011,
+                        "value": 27.22551
+                    }
+                ]
+            },
+            {
+                "name": "latitude",
+                "description": "Latitude of the tie points (WGS-84), positive N",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "812.0",
+                "subSamplingY": "809.0",
+                "expectedPixels": [
+                    {
+                        "x": 1283,
+                        "y": 6464,
+                        "value": 52.195484
+                    },
+                    {
+                        "x": 4211,
+                        "y": 8866,
+                        "value": 51.91468
+                    }
+                ]
+            },
+            {
+                "name": "longitude",
+                "description": "Longitude of the tie points (WGS-84), Greenwich origin, positive E",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "812.0",
+                "subSamplingY": "809.0",
+                "expectedPixels": [
+                    {
+                        "x": 6133,
+                        "y": 4703,
+                        "value": 6.0973663
+                    },
+                    {
+                        "x": 7712,
+                        "y": 4715,
+                        "value": 6.385858
+                    }
+                ]
+            }
+        ],
+        "bands": [
+            {
+                "name": "Amplitude",
+                "description": "Image Mode Geocoded Image",
+                "geophysicalUnit": "amplitude",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 2761,
+                        "y": 8729,
+                        "value": 172.0
+                    },
+                    {
+                        "x": 80,
+                        "y": 4569,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "Intensity",
+                "description": "Intensity Image",
+                "geophysicalUnit": "intensity",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 2656,
+                        "y": 1913,
+                        "value": 1156.0
+                    },
+                    {
+                        "x": 2216,
+                        "y": 419,
+                        "value": 24964.0
+                    }
+                ]
+            }
+        ],
+        "metadata": [
+            {
+                "path": "MAP_PROJECTION_GADS/ASAR_Map_GADS.sd//standard_parallel_parameters.para3",
+                "value": "0.0"
+            },
+            {
+                "path": "DOP_CENTROID_COEFFS_ADS/dop_conf",
+                "value": "0.9909339"
+            }
+        ]
+    }
+}

@@ -1,0 +1,515 @@
+{
+    "id": "20101103-ATS_NR_2P-UPA-L2P",
+    "decodeQualification": "SUITABLE",
+    "expectedContent": {
+        "sceneWidth": 512,
+        "sceneHeight": 40448,
+        "startTime": "03-NOV-2010 13:06:29.000000",
+        "endTime": "03-NOV-2010 14:47:36.000000",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 220.0,
+                    "y": 21743.0,
+                    "lat": -67.34600067138672,
+                    "lon": 141.66099548339844
+                },
+                {
+                    "x": 380.0,
+                    "y": 26247.0,
+                    "lat": -28.628999710083008,
+                    "lon": 120.37000274658203
+                }
+            ],
+            "reverseAccuracy": 0.5
+        },
+        "bands": [
+            {
+                "name": "lat",
+                "description": "latitude",
+                "geophysicalUnit": "degrees_north",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "false",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 26,
+                        "y": 7206,
+                        "value": 19.638
+                    },
+                    {
+                        "x": 350,
+                        "y": 34404,
+                        "value": 44.012
+                    }
+                ]
+            },
+            {
+                "name": "lon",
+                "description": "longitude",
+                "geophysicalUnit": "degrees_east",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "false",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 148,
+                        "y": 10389,
+                        "value": -55.452
+                    },
+                    {
+                        "x": 312,
+                        "y": 14774,
+                        "value": -64.685
+                    }
+                ]
+            },
+            {
+                "name": "sea_surface_temperature",
+                "description": "sea surface temperature",
+                "geophysicalUnit": "kelvin",
+                "noDataValue": "-54.53000000000003",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 281,
+                        "y": 30147,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 311,
+                        "y": 37554,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "sst_dtime",
+                "description": "time difference from reference time",
+                "geophysicalUnit": "second",
+                "noDataValue": "-32768.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 81,
+                        "y": 26940,
+                        "value": 4040.0
+                    },
+                    {
+                        "x": 265,
+                        "y": 36949,
+                        "value": 5542.0
+                    }
+                ]
+            },
+            {
+                "name": "satellite_zenith_angle",
+                "description": "satellite zenith angle",
+                "geophysicalUnit": "angular_degree",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 387,
+                        "y": 19601,
+                        "value": 11.0
+                    },
+                    {
+                        "x": 486,
+                        "y": 19652,
+                        "value": 19.0
+                    }
+                ]
+            },
+            {
+                "name": "sea_ice_fraction",
+                "description": "sea ice fraction",
+                "geophysicalUnit": "percent",
+                "noDataValue": "-1.28",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 174,
+                        "y": 36380,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 5,
+                        "y": 19041,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "sources_of_sea_ice_fraction",
+                "description": "sources of sea ice fraction",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 167,
+                        "y": 7972,
+                        "value": 3.0
+                    },
+                    {
+                        "x": 139,
+                        "y": 1747,
+                        "value": 3.0
+                    }
+                ]
+            },
+            {
+                "name": "DT_analysis",
+                "description": "deviation from sst reference climatology",
+                "geophysicalUnit": "kelvin",
+                "noDataValue": "-12.8",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 497,
+                        "y": 24460,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 293,
+                        "y": 28992,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "rejection_flag",
+                "description": "rejection flag",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "false",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 118,
+                        "y": 20123,
+                        "value": 4.0
+                    },
+                    {
+                        "x": 164,
+                        "y": 29225,
+                        "value": 64.0
+                    }
+                ]
+            },
+            {
+                "name": "proximity_confidence",
+                "description": "proximity confidence value",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 183,
+                        "y": 20151,
+                        "value": 0.0
+                    },
+                    {
+                        "x": 206,
+                        "y": 17890,
+                        "value": 0.0
+                    }
+                ]
+            },
+            {
+                "name": "confidence_flag",
+                "description": "confidence flag",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "false",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 294,
+                        "y": 3714,
+                        "value": 8.0
+                    },
+                    {
+                        "x": 330,
+                        "y": 640,
+                        "value": 0.0
+                    }
+                ]
+            },
+            {
+                "name": "SSES_bias_error",
+                "description": "SSES bias error based on confidence flags",
+                "geophysicalUnit": "kelvin",
+                "noDataValue": "-1.2799999713897705",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 499,
+                        "y": 14856,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 486,
+                        "y": 38279,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "SSES_standard_deviation_error",
+                "description": "SSES standard deviation error based on confidence flags",
+                "geophysicalUnit": "kelvin",
+                "noDataValue": "-0.2799999713897705",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 56,
+                        "y": 18276,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 292,
+                        "y": 22750,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "aerosol_optical_depth",
+                "description": "aerosol optical depth",
+                "geophysicalUnit": "count",
+                "noDataValue": "-12.8",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 258,
+                        "y": 21097,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 230,
+                        "y": 23500,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "aod_dtime_from_sst",
+                "description": "time difference of AOD measurement from sst measurement",
+                "geophysicalUnit": "hour",
+                "noDataValue": "-12.8",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 7,
+                        "y": 17175,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 35,
+                        "y": 40158,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "sources_of_aod",
+                "description": "sources of aerosol optical depth",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 151,
+                        "y": 30137,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 411,
+                        "y": 29786,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "wind_speed",
+                "description": "wind speed",
+                "geophysicalUnit": "m s-1",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 427,
+                        "y": 38243,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 127,
+                        "y": 21510,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "wind_speed_dtime_from_sst",
+                "description": "time difference of wind speed measurement from sst measurement",
+                "geophysicalUnit": "hour",
+                "noDataValue": "-12.8",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 312,
+                        "y": 10520,
+                        "value": 2.0
+                    },
+                    {
+                        "x": 283,
+                        "y": 6106,
+                        "value": -1.0
+                    }
+                ]
+            },
+            {
+                "name": "sources_of_wind_speed",
+                "description": "sources of wind speed",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 243,
+                        "y": 22615,
+                        "value": 0.0
+                    },
+                    {
+                        "x": 48,
+                        "y": 34373,
+                        "value": 0.0
+                    }
+                ]
+            },
+            {
+                "name": "surface_solar_irradiance",
+                "description": "surface solar irradiance",
+                "geophysicalUnit": "watt m-2",
+                "noDataValue": "-40.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 49,
+                        "y": 3146,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 232,
+                        "y": 27356,
+                        "value": 495.0
+                    }
+                ]
+            },
+            {
+                "name": "ssi_dtime_from_sst",
+                "description": "time difference of surface solar irradiance measurement from sst measurement",
+                "geophysicalUnit": "hour",
+                "noDataValue": "-12.8",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 238,
+                        "y": 36211,
+                        "value": 1.0
+                    },
+                    {
+                        "x": 444,
+                        "y": 24270,
+                        "value": 1.0
+                    }
+                ]
+            },
+            {
+                "name": "sources_of_ssi",
+                "description": "sources of surface solar irradiance",
+                "noDataValue": "-128.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 492,
+                        "y": 15410,
+                        "value": 3.0
+                    },
+                    {
+                        "x": 44,
+                        "y": 21546,
+                        "value": 3.0
+                    }
+                ]
+            },
+            {
+                "name": "atsr_dual_nadir_sst_difference",
+                "description": "sea surface temperature nadir",
+                "geophysicalUnit": "kelvin",
+                "noDataValue": "-327.68",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 376,
+                        "y": 24064,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 499,
+                        "y": 7523,
+                        "value": "NaN"
+                    }
+                ]
+            }
+        ],
+        "metadata": [
+            {
+                "path": "Global_Attributes/GDS_version_id",
+                "value": "v1.r1.7"
+            },
+            {
+                "path": "Global_Attributes/start_date",
+                "value": "2010-11-03 UTC"
+            }
+        ]
+    }
+}

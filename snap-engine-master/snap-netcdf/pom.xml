@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2011 Brockmann Consult GmbH (info@brockmann-consult.de)
+  ~
+  ~ This program is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU General Public License as published by the Free
+  ~ Software Foundation; either version 3 of the License, or (at your option)
+  ~ any later version.
+  ~ This program is distributed in the hope that it will be useful, but WITHOUT
+  ~ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  ~ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+  ~ more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program; if not, see http://www.gnu.org/licenses/
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>snap-engine</artifactId>
+        <groupId>org.esa.snap</groupId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>snap-netcdf</artifactId>
+    <packaging>nbm</packaging>
+
+    <name>SNAP NetCDF Product Reader/Writer</name>
+    <description>A product reader and writer for NetCDF files. It supports metadata profiles for CF, BEAM, HDF-EOS,
+        ODESA.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>ceres-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>ceres-binding</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>ceres-jai</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>ceres-glayer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>snap-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.ucar</groupId>
+            <artifactId>netcdf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.ucar</groupId>
+            <artifactId>nujan</artifactId>
+        </dependency>
+        <!--
+        We have to include the following UGLY dependencies so that they are put into the NBM module's ext folder.
+        Otherwise we always get onm thne command-line:
+
+            SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+            SLF4J: Defaulting to no-operation (NOP) logger implementation
+            SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+        -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+
+        <!--
+        This is needed because otherwise we get:
+        [ERROR] Failed to execute goal org.codehaus.mojo:nbm-maven-plugin:3.14:manifest (default-manifest) on project snap-netcdf:
+                Uncategorized problems with NetBeans dependency verification (maybe MNBMODULE-102 or wrong maven dependency metadata).
+                Supposedly external classes are used in the project's binaries but the classes are not found on classpath.
+                Class usages: [org.apache.commons.logging.LogFactory, org.apache.commons.logging.Log] -> [Help 1]
+        -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+
+        <!-- Test stuff -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <publicPackages>
+                        <publicPackage>edu.ucar.ral.nujan.netcdf</publicPackage>
+                        <publicPackage>ucar.ma2</publicPackage>
+                        <publicPackage>ucar.nc2</publicPackage>
+                        <publicPackage>ucar.nc2.constants</publicPackage>
+                        <publicPackage>ucar.nc2.dataset</publicPackage>
+                        <publicPackage>ucar.nc2.dt</publicPackage>
+                        <publicPackage>ucar.nc2.dt.point</publicPackage>
+                        <publicPackage>ucar.nc2.ft.point.standard</publicPackage>
+                        <publicPackage>ucar.nc2.time</publicPackage>
+                        <publicPackage>ucar.nc2.util</publicPackage>
+                        <publicPackage>ucar.nc2.util.rc</publicPackage>
+                        <publicPackage>ucar.nc2.util.net</publicPackage>
+                        <publicPackage>ucar.nc2.util.cache</publicPackage>
+                        <publicPackage>ucar.nc2.units</publicPackage>
+                        <publicPackage>ucar.nc2.iosp</publicPackage>
+                        <publicPackage>ucar.nc2.iosp.hdf5</publicPackage>
+                        <publicPackage>ucar.nc2.iosp.netcdf3</publicPackage>
+                        <publicPackage>ucar.nc2.wmo</publicPackage>
+                        <publicPackage>ucar.unidata.geoloc</publicPackage>
+                        <publicPackage>ucar.unidata.io</publicPackage>
+                        <publicPackage>ucar.unidata.io.bzip2</publicPackage>
+                        <publicPackage>ucar.unidata.util</publicPackage>
+                        <publicPackage>thredds.catalog</publicPackage>
+                        <publicPackage>org.slf4j</publicPackage>
+                        <publicPackage>org.slf4j.impl</publicPackage>
+                        <publicPackage>org.esa.snap.dataio.netcdf.*</publicPackage>
+                    </publicPackages>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <useDefaultManifestFile>true</useDefaultManifestFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+

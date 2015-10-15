@@ -1,0 +1,225 @@
+{
+    "id": "ASA_APP_1PNPDE20080210_031331",
+    "decodeQualification": "INTENDED",
+    "expectedContent": {
+        "sceneWidth": 6979,
+        "sceneHeight": 8588,
+        "startTime": "10-FEB-2008 03:13:31.268985",
+        "endTime": "10-FEB-2008 03:13:47.274820",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 3010.0,
+                    "y": 4616.0,
+                    "lat": 2.575727245261818,
+                    "lon": 97.89833704297679
+                },
+                {
+                    "x": 5181.0,
+                    "y": 5572.0,
+                    "lat": 2.522462598873581,
+                    "lon": 97.63696403683772
+                }
+            ],
+            "reverseAccuracy": 0.4
+        },
+        "tiePointGrids": [
+            {
+                "name": "samples",
+                "description": "range sample",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "698.0",
+                "subSamplingY": "804.0",
+                "expectedPixels": [
+                    {
+                        "x": 364,
+                        "y": 1530,
+                        "value": 365.0
+                    },
+                    {
+                        "x": 4781,
+                        "y": 7304,
+                        "value": 4782.0
+                    }
+                ]
+            },
+            {
+                "name": "slant_range_time",
+                "description": "2 way slant range time",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "698.0",
+                "subSamplingY": "804.0",
+                "expectedPixels": [
+                    {
+                        "x": 2030,
+                        "y": 2205,
+                        "value": 6090627.5
+                    },
+                    {
+                        "x": 4260,
+                        "y": 3137,
+                        "value": 6192958.5
+                    }
+                ]
+            },
+            {
+                "name": "incident_angle",
+                "description": "Incident angle",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "698.0",
+                "subSamplingY": "804.0",
+                "expectedPixels": [
+                    {
+                        "x": 3838,
+                        "y": 6401,
+                        "value": 33.87858
+                    },
+                    {
+                        "x": 4245,
+                        "y": 7973,
+                        "value": 34.183502
+                    }
+                ]
+            },
+            {
+                "name": "latitude",
+                "description": "Latitude of the tie points (WGS-84), positive N",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "698.0",
+                "subSamplingY": "804.0",
+                "expectedPixels": [
+                    {
+                        "x": 1104,
+                        "y": 5720,
+                        "value": 2.4076915
+                    },
+                    {
+                        "x": 3623,
+                        "y": 7845,
+                        "value": 2.2337034
+                    }
+                ]
+            },
+            {
+                "name": "longitude",
+                "description": "Longitude of the tie points (WGS-84), Greenwich origin, positive E",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "698.0",
+                "subSamplingY": "804.0",
+                "expectedPixels": [
+                    {
+                        "x": 5277,
+                        "y": 4161,
+                        "value": 97.6599
+                    },
+                    {
+                        "x": 6635,
+                        "y": 4172,
+                        "value": 97.5105
+                    }
+                ]
+            }
+        ],
+        "bands": [
+            {
+                "name": "Amplitude_VV",
+                "description": "Amplitude Image Dataset 1",
+                "geophysicalUnit": "amplitude",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 2375,
+                        "y": 7724,
+                        "value": 223.0
+                    },
+                    {
+                        "x": 69,
+                        "y": 4042,
+                        "value": 444.0
+                    }
+                ]
+            },
+            {
+                "name": "Intensity_VV",
+                "description": "Intensity Image Dataset 1",
+                "geophysicalUnit": "intensity",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 2285,
+                        "y": 1692,
+                        "value": 113569.0
+                    },
+                    {
+                        "x": 1906,
+                        "y": 370,
+                        "value": 254016.0
+                    }
+                ]
+            },
+            {
+                "name": "Amplitude_VH",
+                "description": "Amplitude Image Dataset 2",
+                "geophysicalUnit": "amplitude",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 6779,
+                        "y": 5193,
+                        "value": 47.0
+                    },
+                    {
+                        "x": 3994,
+                        "y": 6155,
+                        "value": 223.0
+                    }
+                ]
+            },
+            {
+                "name": "Intensity_VH",
+                "description": "Intensity Image Dataset 2",
+                "geophysicalUnit": "intensity",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 1618,
+                        "y": 4272,
+                        "value": 17689.0
+                    },
+                    {
+                        "x": 2240,
+                        "y": 6205,
+                        "value": 1225.0
+                    }
+                ]
+            }
+        ],
+        "metadata": [
+            {
+                "path": "MDS1_SQ_ADS/thresh_input_std_dev",
+                "value": "0.15"
+            },
+            {
+                "path": "MDS2_SQ_ADS/thresh_input_mean",
+                "value": "0.2"
+            }
+        ]
+    }
+}

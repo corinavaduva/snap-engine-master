@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.esa.snap</groupId>
+        <artifactId>snap-engine</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ceres-jai</artifactId>
+    <packaging>nbm</packaging>
+
+    <name>Ceres JAI Library</name>
+    <description>The Ceres JAI Library provides extensions based on the Java Advanced Imaging (JAI) library.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.esa.snap</groupId>
+            <artifactId>ceres-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.media.jai</groupId>
+            <artifactId>jai-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.media.jai</groupId>
+            <artifactId>jai-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.media.jai</groupId>
+            <artifactId>mlibwrapper-jai</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.media</groupId>
+            <artifactId>clibwrapper-jiio</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.media</groupId>
+            <artifactId>jai-imageio</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>it.geosolutions.imageio-ext</groupId>
+            <artifactId>imageio-ext-tiff</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rhino</groupId>
+            <artifactId>js</artifactId>
+            <version>1.7R1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <publicPackages>
+                        <publicPackage>javax.media.jai.*</publicPackage>
+                        <publicPackage>javax.imageio.*</publicPackage>
+                        <publicPackage>com.sun.media.*</publicPackage>
+                        <publicPackage>com.sun.medialib.codec.*</publicPackage>
+                        <publicPackage>com.sun.medialib.mlib.*</publicPackage>
+                        <publicPackage>com.bc.ceres.compiler</publicPackage>
+                        <publicPackage>com.bc.ceres.jai.*</publicPackage>
+                        <publicPackage>it.geosolutions.imageio.plugins.tiff</publicPackage>
+                        <publicPackage>it.geosolutions.imageioimpl.plugins.tiff</publicPackage>
+                        <publicPackage>org.mozilla.javascript.*</publicPackage>
+                    </publicPackages>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <useDefaultManifestFile>true</useDefaultManifestFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+

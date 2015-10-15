@@ -1,0 +1,48 @@
+{
+    "id": "ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_9km_sparse_PML+JRC_OC4v6_QAA-20030101-fv0.2",
+    "decodeQualification": "INTENDED",
+    "expectedContent": {
+        "sceneWidth": 4320,
+        "sceneHeight": 2160,
+        "startTime": "01-JAN-2003 00:00:00.000000",
+        "endTime": "01-JAN-2003 23:59:00.000000",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 1863.0,
+                    "y": 1161.0,
+                    "lat": -6.75,
+                    "lon": -24.75
+                },
+                {
+                    "x": 3207.0,
+                    "y": 1401.0,
+                    "lat": -26.75,
+                    "lon": 87.25
+                }
+            ],
+            "reverseAccuracy": 0.01
+        },
+        "bands": [
+            {
+                "name": "bl_bin_num",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 225,
+                        "y": 384,
+                        "value": "NaN"
+                    },
+                    {
+                        "x": 2959,
+                        "y": 1837,
+                        "value": "NaN"
+                    }
+                ]
+            }
+        ]
+    }
+}

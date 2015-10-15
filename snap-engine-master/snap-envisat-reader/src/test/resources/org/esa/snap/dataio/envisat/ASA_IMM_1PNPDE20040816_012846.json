@@ -1,0 +1,183 @@
+{
+    "id": "ASA_IMM_1PNPDE20040816_012846",
+    "decodeQualification": "INTENDED",
+    "expectedContent": {
+        "sceneWidth": 1471,
+        "sceneHeight": 5535,
+        "startTime": "16-AUG-2004 01:28:46.610626",
+        "endTime": "16-AUG-2004 01:29:48.746269",
+        "geoCoding": {
+            "coordinates": [
+                {
+                    "x": 634.0,
+                    "y": 2975.0,
+                    "lat": 46.80307896023705,
+                    "lon": 133.15676305081544
+                },
+                {
+                    "x": 1092.0,
+                    "y": 3591.0,
+                    "lat": 46.46300102766349,
+                    "lon": 132.5899149420876
+                }
+            ],
+            "reverseAccuracy": 0.1
+        },
+        "tiePointGrids": [
+            {
+                "name": "samples",
+                "description": "range sample",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "147.0",
+                "subSamplingY": "135.0",
+                "expectedPixels": [
+                    {
+                        "x": 76,
+                        "y": 986,
+                        "value": 77.0
+                    },
+                    {
+                        "x": 1007,
+                        "y": 4708,
+                        "value": 1008.0
+                    }
+                ]
+            },
+            {
+                "name": "slant_range_time",
+                "description": "2 way slant range time",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "147.0",
+                "subSamplingY": "135.0",
+                "expectedPixels": [
+                    {
+                        "x": 427,
+                        "y": 1421,
+                        "value": 5596246.0
+                    },
+                    {
+                        "x": 898,
+                        "y": 2021,
+                        "value": 5684007.5
+                    }
+                ]
+            },
+            {
+                "name": "incident_angle",
+                "description": "Incident angle",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "147.0",
+                "subSamplingY": "135.0",
+                "expectedPixels": [
+                    {
+                        "x": 809,
+                        "y": 4125,
+                        "value": 22.75225
+                    },
+                    {
+                        "x": 894,
+                        "y": 5139,
+                        "value": 23.20586
+                    }
+                ]
+            },
+            {
+                "name": "latitude",
+                "description": "Latitude of the tie points (WGS-84), positive N",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "147.0",
+                "subSamplingY": "135.0",
+                "expectedPixels": [
+                    {
+                        "x": 232,
+                        "y": 3686,
+                        "value": 46.275116
+                    },
+                    {
+                        "x": 763,
+                        "y": 5056,
+                        "value": 45.449677
+                    }
+                ]
+            },
+            {
+                "name": "longitude",
+                "description": "Longitude of the tie points (WGS-84), Greenwich origin, positive E",
+                "offsetX": "0.5",
+                "offsetY": "0.5",
+                "subSamplingX": "147.0",
+                "subSamplingY": "135.0",
+                "expectedPixels": [
+                    {
+                        "x": 1112,
+                        "y": 2682,
+                        "value": 132.75717
+                    },
+                    {
+                        "x": 1398,
+                        "y": 2689,
+                        "value": 132.4793
+                    }
+                ]
+            }
+        ],
+        "bands": [
+            {
+                "name": "Amplitude",
+                "description": "Image Mode Medium Resolution Image (stripline)",
+                "geophysicalUnit": "amplitude",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 500,
+                        "y": 4978,
+                        "value": 1398.0
+                    },
+                    {
+                        "x": 14,
+                        "y": 2605,
+                        "value": "NaN"
+                    }
+                ]
+            },
+            {
+                "name": "Intensity",
+                "description": "Intensity Image",
+                "geophysicalUnit": "intensity",
+                "noDataValue": "0.0",
+                "noDataValueUsed": "true",
+                "spectralWavelength": "0.0",
+                "spectralBandwidth": "0.0",
+                "expectedPixels": [
+                    {
+                        "x": 481,
+                        "y": 1091,
+                        "value": 1.4945956E7
+                    },
+                    {
+                        "x": 401,
+                        "y": 239,
+                        "value": 2739025.0
+                    }
+                ]
+            }
+        ],
+        "metadata": [
+            {
+                "path": "GEOLOCATION_GRID_ADS/GEOLOCATION_GRID_ADS.25/ASAR_Geo_Grid_ADSR.sd//first_line_tie_points.longs",
+                "value": "133706208,133565859,133425414,133284872,133144233,133003495,132862658,132721721,132580683,132439546,132298309"
+            },
+            {
+                "path": "SR_GR_ADS/SR_GR_ADS.10/slant_range_time",
+                "value": "5524827.0"
+            }
+        ]
+    }
+}

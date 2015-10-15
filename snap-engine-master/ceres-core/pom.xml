@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.esa.snap</groupId>
+        <artifactId>snap-engine</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ceres-core</artifactId>
+    <packaging>nbm</packaging>
+
+    <name>Ceres Runtime Library</name>
+    <description>
+        The Ceres Runtime provides a platform for applications based on updatable, versioned modules.
+    </description>
+
+    <dependencies>
+        <!--
+            The following libraries are used in and out we let ceres-core export the API,
+            although we don't use it directly here.
+        -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xpp3</groupId>
+            <artifactId>xpp3_min</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jfree</groupId>
+            <artifactId>jcommon</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <publicPackages>
+                        <publicPackage>org.xmlpull.*</publicPackage>
+                        <publicPackage>org.jdom2.*</publicPackage>
+                        <publicPackage>com.thoughtworks.xstream.*</publicPackage>
+
+                        <publicPackage>org.apache.commons.lang.*</publicPackage>
+                        <publicPackage>org.apache.commons.logging.*</publicPackage>
+                        <publicPackage>org.apache.commons.math3.*</publicPackage>
+                        <publicPackage>org.apache.commons.cli.*</publicPackage>
+                        <publicPackage>org.apache.commons.collections.*</publicPackage>
+                        <!--
+                        <publicPackage>org.apache.commons.codec.*</publicPackage>
+                        -->
+
+                        <publicPackage>org.jfree.chart.*</publicPackage>
+                        <publicPackage>org.jfree.data.*</publicPackage>
+                        <publicPackage>org.jfree.date.*</publicPackage>
+                        <publicPackage>org.jfree.ui</publicPackage>
+                        <publicPackage>org.jfree.util</publicPackage>
+
+                        <publicPackage>org.apache.velocity.*</publicPackage>
+
+                        <publicPackage>com.bc.ceres.core</publicPackage>
+                        <publicPackage>com.bc.ceres.core.runtime</publicPackage>
+                         <!--todo - fix this export7-->
+                        <publicPackage>com.bc.ceres.core.runtime.internal</publicPackage>
+                        <publicPackage>com.bc.ceres.core.runtime.support</publicPackage>
+                        <publicPackage>com.bc.ceres.launcher</publicPackage>
+                        <publicPackage>com.bc.ceres.util</publicPackage>
+                    </publicPackages>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <useDefaultManifestFile>true</useDefaultManifestFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
